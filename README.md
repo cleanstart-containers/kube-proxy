@@ -1,49 +1,49 @@
-**CleanStart Container for Kube-Proxy**
+- *CleanStart Container for Kube-Proxy**
 
 Kube-proxy is a network proxy that runs on each node in a Kubernetes cluster, maintaining network rules on nodes and enabling network communication to Pods. It implements the Kubernetes Service concept by maintaining network rules and performing connection forwarding.
 
-**Key Features**
-* Kubernetes v1.34.0 network proxy
-* Supports iptables, ipvs, and nftables proxy modes
-* Health and metrics endpoints included
-* Optimized for cloud-native environments
+- *Key Features**
+- Kubernetes v1.34.0 network proxy
+- Supports iptables, ipvs, and nftables proxy modes
+- Health and metrics endpoints included
+- Optimized for cloud-native environments
 
-**Common Use Cases**
-* Kubernetes cluster network proxy
-* Service load balancing and routing
-* Network rule management on cluster nodes
+- *Common Use Cases**
+- Kubernetes cluster network proxy
+- Service load balancing and routing
+- Network rule management on cluster nodes
 
-**Pull Commands**
+- *Pull Commands**
 Download the container image
 
 ```bash
 docker pull cleanstart/kube-proxy:latest-dev
 ```
 
-**Quick Test**
+- *Quick Test**
 Verify the image works
 
 ```bash
 docker run --rm cleanstart/kube-proxy:latest-dev --version
 ```
 
-**Best Practices**
-* Use specific image tags for production (avoid latest-dev)
-* Configure required capabilities: NET_ADMIN and SYS_MODULE
-* Run as DaemonSet in Kubernetes (one pod per node)
-* Monitor health endpoint on port 10256
+- *Best Practices**
+- Use specific image tags for production (avoid latest-dev)
+- Configure required capabilities: NET_ADMIN and SYS_MODULE
+- Run as DaemonSet in Kubernetes (one pod per node)
+- Monitor health endpoint on port 10256
 
-**
-### 
-### Resources
+- *
 
-- Official Documentation: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/kube-proxy
-- Docker Hub: https://hub.docker.com/r/cleanstart/kube-proxy
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
+###
 
----
+## Resources
+
+- **Official Documentation:** https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kube-proxy
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/kube-proxy
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
