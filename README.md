@@ -34,14 +34,14 @@ docker run --rm cleanstart/kube-proxy:latest-dev --version
 * Monitor health endpoint on port 10256
 
 **
-### Resources & Documentation  
-Essential links and resources for further information:
+### 
+### Resources
 
-- CleanStart Website: https://www.cleanstart.com
+- Official Documentation: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
 - View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/kube-proxy
+- Docker Hub: https://hub.docker.com/r/cleanstart/kube-proxy
 - CleanStart All Images: https://images.cleanstart.com
-- CleanStart Community Images: https://hub.docker.com/u/cleanstart
-- Other location for Community image: https://hub.docker.com/r/cleanstart/kube-proxy
+- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
 
 ---
 
