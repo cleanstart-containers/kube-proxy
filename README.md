@@ -34,14 +34,14 @@ Typical scenarios where this container excels:
 
 Download the container image:
 ```bash
-docker pull cleanstart/kube-proxy:latest-dev
+docker pull ghcr.io/cleanstart-containers/kube-proxy:latest-dev
 ```
 
 ### Quick Test
 
 Verify the image works:
 ```bash
-docker run --rm cleanstart/kube-proxy:latest-dev --version
+docker run --rm ghcr.io/cleanstart-containers/kube-proxy:latest-dev --version
 ```
 
 ---
