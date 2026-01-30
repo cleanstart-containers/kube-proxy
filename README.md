@@ -16,23 +16,15 @@ Kubernetes v1.34.0 network proxy:
 
 ---
 
-## Common Use Cases
-
-Typical scenarios where this container excels:
-
-- Kubernetes cluster network proxy
-- Service load balancing and routing
-- Network rule management on cluster nodes
-- Pod-to-Pod and Service-to-Pod communication
-- Cluster networking implementation
-
----
-
-## Getting Started
+## Quick Start
 
 ### Pull Commands
 
 Download the container image:
+```bash
+docker pull ghcr.io/cleanstart-containers/kube-proxy:latest
+```
+
 ```bash
 docker pull ghcr.io/cleanstart-containers/kube-proxy:latest-dev
 ```
@@ -46,6 +38,18 @@ docker run --rm ghcr.io/cleanstart-containers/kube-proxy:latest-dev --version
 
 ---
 
+## Common Use Cases
+
+Typical scenarios where this container excels:
+
+- Kubernetes cluster network proxy
+- Service load balancing and routing
+- Network rule management on cluster nodes
+- Pod-to-Pod and Service-to-Pod communication
+- Cluster networking implementation
+
+---
+
 ## Best Practices
 
 - Use specific image tags for production (avoid latest-dev)
@@ -53,6 +57,14 @@ docker run --rm ghcr.io/cleanstart-containers/kube-proxy:latest-dev --version
 - Run as DaemonSet in Kubernetes (one pod per node)
 - Monitor health endpoint on port 10256
 - Enable appropriate proxy mode for your environment (iptables/ipvs/nftables)
+
+---
+
+### Architecture-based Pull Commands
+```bash
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/kube-proxy:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/kube-proxy:latest
+```
 
 ---
 
