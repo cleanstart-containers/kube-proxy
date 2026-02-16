@@ -61,7 +61,7 @@ docker run --rm ghcr.io/cleanstart-containers/kube-proxy:latest-dev --version
 - **Official Documentation:** https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
 - **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kube-proxy
 - **Docker Hub:** https://hub.docker.com/r/cleanstart/kube-proxy
-- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart All Images:** https://images.cleanstart.com/images/kube-proxy/details
 - **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ---
